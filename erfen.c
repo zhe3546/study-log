@@ -8,7 +8,7 @@ int main(void)
     int fou;
     int a[10];
     printf("输入成绩：");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0;  i < 10; i++)
     {
         scanf("%d",&a[i]);     
     }
