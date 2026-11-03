@@ -1,0 +1,33 @@
+{
+    // ===== Code Runner 配置（Ctrl+Alt+N 一键运行）=====
+
+    // 在终端里运行（必须 true，否则 cin 没法输入，程序会卡住）
+    "code-runner.runInTerminal": true,
+
+    // 运行前自动保存（治"改了代码没变化"这个坑）
+    "code-runner.saveFileBeforeRun": true,
+
+    // 每次运行前清掉上一次的输出
+    "code-runner.clearPreviousOutput": true,
+
+    // 运行后把光标焦点交给终端（方便直接输入数据）
+    "code-runner.preserveFocus": false,
+
+    // 忽略选中的片段，永远跑整个文件（防止误触只跑半段代码）
+    "code-runner.ignoreSelection": true,
+
+    // ===== 终端改成"命令提示符" =====
+    // 原因：Code Runner 内部用的是 `&&` 把"编译"和"运行"串起来，
+    // 而 Windows PowerShell 5.1 不认识 &&（PowerShell 7 才支持）。
+    // 命令提示符支持 &&，所以改用它，一劳永逸。
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+    // ===== 文件 =====
+    // 保存时用 UTF-8（和 chcp 65001 配套，中文不乱码）
+    "files.encoding": "utf8",
+
+    // 编译产生的 .exe 不显示在左侧文件列表里（眼不见为净）
+    "files.exclude": {
+        "**/*.exe": true
+    }
+}
