@@ -1,8 +1,9 @@
-#include <stdio.h>      // 引入标准输入输出库,printf 住在这里
+#include <stdio.h>
+#include <stdlib.h>
 
-int main(void)          // 程序入口,一切从这里开始
+int main(void)
 {
-int a;
-int b；
-printf("%d/n",a+b);
+    printf("这是改过之后的版本\n");
+    system("pause");
+    return 0;
 }
