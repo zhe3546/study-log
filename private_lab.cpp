@@ -8,7 +8,7 @@ private:
 public:
     string name;
     void setScore(int s){
-        if (s>0&&s<100)
+        if (s>=0&&s<=100)
         {
             score=s;
         }
@@ -29,7 +29,7 @@ int main()
     student s2;
     student s3;
     s1.name="张一";
-    s1.setScore(100);
+    s1.setScore(88);
     s2.name="张二";
     s2.setScore(89);
     s3.name="张三";

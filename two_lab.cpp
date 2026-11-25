@@ -8,7 +8,7 @@ private:
 public:
     string name;
     void setScore(int s){
-        if (s>0&&s<100)
+        if (s>=0&&s<=100)
         {
             score=s;
         }
